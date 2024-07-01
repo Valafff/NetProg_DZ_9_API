@@ -1,0 +1,56 @@
+﻿<Window x:Class="NetProg_DZ_9_API.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NetProg_DZ_9_API"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="500">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="Введите название города(English only)" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <TextBox Grid.Column="1" x:Name="tbCityName"  VerticalAlignment="Center" Margin="5"/>
+            <ComboBox Grid.Column ="2"  x:Name="Region" VerticalAlignment="Center" Margin="5" SelectedIndex="0">
+                <TextBlock>ru</TextBlock>
+                <TextBlock>en</TextBlock>
+                <TextBlock>us</TextBlock>
+            </ComboBox>
+            <TextBox Grid.Column="3" x:Name="tb_API" Text="Введите ключ API" VerticalAlignment="Center" Margin="5"/>
+        </Grid>
+
+        <ScrollViewer Grid.Row="1">
+            <StackPanel Grid.Row="1" x:Name="myStack">
+                <TextBlock  x:Name="tb_Title"  Text="Данные о погоде на день"/>
+                <TextBlock  x:Name="tb_Avarage" Text=""/>
+                <TextBlock  x:Name="tb_FeelLike" Text=""/>
+                <TextBlock  x:Name="tb_MinTemp" Text=""/>
+                <TextBlock  x:Name="tb_MaxTem" Text=""/>
+                <TextBlock  x:Name="tb_Title2"  Text="Данные о погоде на 5 дней"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Content="Запросить прогноз на день" Margin="5" Click="Button_WeatherNow_Click"/>
+            <Button Grid.Column="1" x:Name="bt_5days" Content="Запросить прогноз на неделю" Margin="5" Click="Button_5Days_Click"/>
+            <Button Grid.Column="2" Content="Выход" Margin="5" Click="Button_Click_Exit"/>
+        </Grid>
+
+    </Grid>
+</Window>

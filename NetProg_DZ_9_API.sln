@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetProg_DZ_9_API", "NetProg_DZ_9_API\NetProg_DZ_9_API.csproj", "{BA9A07FC-8F19-4310-A2F8-92EB1686101D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BA9A07FC-8F19-4310-A2F8-92EB1686101D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA9A07FC-8F19-4310-A2F8-92EB1686101D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA9A07FC-8F19-4310-A2F8-92EB1686101D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA9A07FC-8F19-4310-A2F8-92EB1686101D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7F0F127-CD01-4A81-9EE5-311101C37612}
+	EndGlobalSection
+EndGlobal
